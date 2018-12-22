@@ -56,7 +56,7 @@ class Owner
       val.each {|animal| animal.mood = "happy"}
     end
     
-    self.pets.collect {|key, val| val = []}
+    self.pets = {}
   end
   
   def list_pets
