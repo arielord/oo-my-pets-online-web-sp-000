@@ -52,7 +52,7 @@ class Owner
   end
   
   def sell_pets
-    
+    self.pets.each
   end
   
   def list_pets
