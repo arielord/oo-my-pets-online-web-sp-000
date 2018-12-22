@@ -52,7 +52,11 @@ class Owner
   end
   
   def sell_pets
-    self.pets.each
+    self.pets.each do |key, val|
+      val.each {|animal| animal.mood = "happy"}
+    end
+    
+    self.pets.collect {|key, val| val = []}
   end
   
   def list_pets
